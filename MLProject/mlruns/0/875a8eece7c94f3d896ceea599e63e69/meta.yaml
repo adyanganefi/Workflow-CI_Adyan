@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/adyan/DICODING/membangun_sistem_ml/Workflow-CI/MLProject/mlruns/0/875a8eece7c94f3d896ceea599e63e69/artifacts
+end_time: 1750679286763
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 875a8eece7c94f3d896ceea599e63e69
+run_name: serious-hawk-129
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750678546922
+status: 3
+tags: []
+user_id: aps

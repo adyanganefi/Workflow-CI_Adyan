@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/adyan/DICODING/membangun_sistem_ml/Workflow-CI/MLProject/mlruns/0/2b4e88542be34dd1834eb1437efab8e7/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2b4e88542be34dd1834eb1437efab8e7
+run_name: omniscient-cat-390
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750677854709
+status: 1
+tags: []
+user_id: aps

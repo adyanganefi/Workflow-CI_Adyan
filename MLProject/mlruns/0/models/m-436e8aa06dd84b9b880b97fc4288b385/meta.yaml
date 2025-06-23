@@ -1,0 +1,10 @@
+artifact_location: file:///D:/adyan/DICODING/membangun_sistem_ml/Workflow-CI/MLProject/mlruns/0/models/m-436e8aa06dd84b9b880b97fc4288b385/artifacts
+creation_timestamp: 1750679266808
+experiment_id: '0'
+last_updated_timestamp: 1750679282380
+model_id: m-436e8aa06dd84b9b880b97fc4288b385
+model_type: null
+name: model
+source_run_id: 875a8eece7c94f3d896ceea599e63e69
+status: 2
+status_message: null
