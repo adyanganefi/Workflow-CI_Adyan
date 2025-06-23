@@ -19,21 +19,21 @@ jobs:
       with:
         auto-activate-base: false
         python-version: 3.10
-        environment-file: MLProject/conda.yaml
-        activate-environment: heart_env
+        activate-environment: base
 
-    - name: Install additional Python dependencies
+    - name: Install MLflow CLI
       run: |
-        conda activate heart_env
-        pip install mlflow dagshub
+        pip install mlflow
 
     - name: Run MLflow Project
       run: |
         cd MLProject
         mlflow run . --entry-point main
 
-    - name: Upload Model Artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: trained-model
-        path: MLProject/artifacts/model
+    - name: Commit model artifacts to GitHub
+      run: |
+        git config --global user.email "github-actions@github.com"
+        git config --global user.name "github-actions"
+        git add MLProject/artifacts/model || echo "No new artifacts to add"
+        git commit -m "Add trained model artifact" || echo "No changes to commit"
+        git push || echo "No changes to push"
