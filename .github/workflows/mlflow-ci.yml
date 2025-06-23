@@ -25,8 +25,7 @@ jobs:
 
     - name: Run MLflow Project
       run: |
-        cd MLProject
-        mlflow run . --entry-point main
+        conda run -n heart_env mlflow run MLProject --entry-point main
 
     - name: Commit model artifacts to GitHub
       run: |
