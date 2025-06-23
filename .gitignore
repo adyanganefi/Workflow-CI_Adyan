@@ -3,10 +3,6 @@ venv/
 __pycache__/
 *.pyc
 
-# Data artifacts
-MLProject/artifacts/
-*.log
-
 # VSCode or IDE config
 .vscode/
 .idea/
