@@ -61,6 +61,9 @@ jobs:
         docker tag mlflow-heart-model ${{ secrets.DOCKER_USERNAME }}/mlflow-heart-model:latest
 
     - name: Login to Docker Hub
+      env:
+        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       run: |
         echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin
 
