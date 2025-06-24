@@ -60,7 +60,7 @@ jobs:
         mlflow models build-docker -m MLProject/artifacts/model -n mlflow-heart-model
         docker tag mlflow-heart-model ${{ secrets.DOCKER_USERNAME }}/mlflow-heart-model:latest
 
-    - name: Login to Docker Hub
+    - name: Login to Docker Hub (update)
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
