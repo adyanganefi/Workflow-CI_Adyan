@@ -27,7 +27,7 @@ jobs:
       run: |
         conda run -n heart_env mlflow run MLProject --entry-point main
 
-    - name: Commit model artifacts to GitHub (Update)
+    - name: Commit model artifacts to GitHub (Update_2)
       run: |
         git config --global user.email "github-actions@github.com"
         git config --global user.name "github-actions"
