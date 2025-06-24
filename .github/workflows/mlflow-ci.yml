@@ -33,12 +33,13 @@ jobs:
         name: trained-model
         path: MLProject/artifacts/model
 
-    - name: Log in to Docker Hub (update)
+    - name: Debug Docker Secrets
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       run: |
-        echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+        echo "Username: ${DOCKER_USERNAME}"
+        echo "Password length: ${#DOCKER_PASSWORD}"
 
     - name: Build and Push Docker image with MLflow
       run: |
