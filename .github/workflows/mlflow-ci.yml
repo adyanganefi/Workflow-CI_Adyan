@@ -33,7 +33,7 @@ jobs:
         name: trained-model
         path: MLProject/artifacts/model
 
-    - name: Debug Docker Secrets
+    - name: Debug Docker Secrets_2
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
